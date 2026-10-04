@@ -1,4 +1,4 @@
-# Spice Census: design document (DRAFT v0.2)
+# Spice Census: design document (DRAFT v0.3)
 
 > Status: draft. Items marked **OPEN** need a decision before we build.
 
@@ -23,9 +23,8 @@ that people want to share.
 
 ## 2. Name
 
-Working title: **Spice Census**. The word "census" signals a recurring count, and "spice" is safe
-to post on social platforms (which often block or shadow-ban "kink"). Alternatives:
-*Kinkometer*, *The Curio Census*, *Spectrum of Spice*, *Kinkship*. **OPEN**
+**Spice Census** (decided). The word "census" signals a recurring count, and "spice" is safe
+to post on social platforms (which often block or shadow-ban "kink").
 
 ## 3. User flow
 
@@ -121,20 +120,26 @@ for a targeted person. That makes the code a pseudonym, so under GDPR the
 data becomes **personal data about sex life** again, with all the obligations that brings
 (access/deletion requests, probably a DPIA).
 
-**Options** (**OPEN**, recommendation: A):
+**Decision: random code.** The browser generates a code such as `MAPLE-OTTER-7342`.
+We store only its hash. Because it is not based on anything about the person, nobody can
+recompute it. A participant who comes back enters the code, and their new response gets the same hash.
 
-- **A. Random code (recommended).** The browser generates a code such as `MAPLE-OTTER-7342`.
-  The person writes it down and enters it next time. We store only its hash.
-  Because it is not based on anything about the person, nobody can recompute it.
-  Downside: anyone who loses the code starts fresh, which is acceptable.
-- **B. Self-generated code with deliberate collisions.** This is the standard method in
-  longitudinal research: e.g. the 2nd letter of your mother's first name + your birth
-  month + the last digit of your house number. Easy to remember. Many people share each code, so it
-  points to a group, not a person. Matching is fuzzy, but it is easy to recall.
-- **C. Hash of name + birthday + birthplace with a secret server key.** This protects
-  against outsiders, but not against the operator or anyone who gets the key. Not recommended.
+**The server never sends the code by email.** If it did, our email provider's logs and our
+own sent folder would link an email address to a code, and through the code to the person's
+answers about their sex life. The data would then no longer be anonymous. Instead, the result
+page offers ways for people to keep the code themselves, all without our server:
+- **"Email it to myself"**: a `mailto:` link that opens the person's own email app with a
+  pre-filled draft (neutral subject "My Spice Census code"). They send it to themselves, so the
+  email only goes through their own provider, and they can search their inbox for it later.
+- **Save to password manager**: a small hidden username/password form, so the browser offers to
+  save the code for this site and autofills it next time.
+- **Copy** and **download as .txt**.
+- **Remember on this device** (localStorage, optional checkbox). Not suitable for shared devices.
 
-Whatever we choose: the code or hash is **never** included in released data (§10). Released data
+Rejected alternatives: a self-generated code (fuzzy matching), or a salted hash of
+name + birthday + birthplace (anyone who knows those facts and gets the key can recompute it).
+
+The code hash is **never** included in released data (§10). Released data
 only says "returning: yes/no", or contains already computed change values.
 
 ## 7. Reminder emails
@@ -230,6 +235,4 @@ data_requests(id, name, email, institution, reason, status, created_at)
 
 ## 13. Open questions
 
-1. Returning code: A (random code), B (self-generated code) or C (salted hash)?
-2. Name?
-3. Impressum solution (can be decided before going live; it does not block development).
+1. Impressum solution (can be decided before going live; it does not block development).
