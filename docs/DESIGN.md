@@ -1,6 +1,6 @@
 # Spice Census: design document (DRAFT v0.3)
 
-> Status: draft. Items marked **OPEN** need a decision before we build.
+> Status: milestone 1 built (see §14). Items marked **OPEN** still need a decision.
 
 ## 1. Goal
 
@@ -98,9 +98,11 @@ interest list on the result page:
   stable ID (e.g. `core.follow.2`), a type, option IDs and a dimension or category tag.
   The code contains **no display text**.
 - All display text comes from locale files (`messages/en.json`, `messages/de.json`, …)
-  and is keyed by question and option ID. To add a language, add one file. A test
-  checks that every locale has every key, and a locale missing keys is hidden from the language switcher.
-- Library: `next-intl`. English is the source language, and German is included at launch.
+  and is keyed by question and option ID. To add a language, add one file and one line in
+  `src/i18n/config.ts`. Missing keys fall back to English, so a translation can be added piece
+  by piece; a test checks that every shipped locale has exactly the English keys.
+- No i18n library: Next.js' built-in dictionary pattern is enough. English is the source
+  language, and German is included at launch. Country names come from `Intl.DisplayNames`.
 - Answers are stored as **option IDs**, never as text, so all languages land in the same columns.
 - Each response stores `survey_version` and `locale`. The locale is needed because a
   translation can change how a question is understood.
@@ -120,7 +122,8 @@ for a targeted person. That makes the code a pseudonym, so under GDPR the
 data becomes **personal data about sex life** again, with all the obligations that brings
 (access/deletion requests, probably a DPIA).
 
-**Decision: random code.** The browser generates a code such as `MAPLE-OTTER-7342`.
+**Decision: random code.** The browser generates a code such as `R6SA-YMJ8-KWBD` (12 characters from an
+alphabet without look-alikes, about 59 bits, so it works in every language).
 We store only its hash. Because it is not based on anything about the person, nobody can
 recompute it. A participant who comes back enters the code, and their new response gets the same hash.
 
@@ -215,13 +218,13 @@ The result is computed in the browser from the answers and is **not stored**.
 | Concern | Choice | Notes |
 |---|---|---|
 | Framework | **Next.js (App Router)**, TypeScript | |
-| i18n | next-intl | Locale files per language |
+| i18n | Built-in dictionaries | Locale files per language |
 | Hosting | Vercel Hobby (free, non-commercial) | Cron included |
 | Database | Neon Postgres free tier (EU) | Supabase free tier pauses after inactivity |
 | ORM | Drizzle | Lightweight, works on serverless |
 | Email | Resend free tier | 3k/month |
 | Bot protection | Cloudflare Turnstile (feature flag) | |
-| Charts | Recharts | Radar chart and results page |
+| Charts | Hand-written SVG | Radar chart; a library only if the results page needs one |
 | Share image | `next/og` | |
 
 ### Data model (sketch)
@@ -236,3 +239,14 @@ data_requests(id, name, email, institution, reason, status, created_at)
 ## 13. Open questions
 
 1. Impressum solution (can be decided before going live; it does not block development).
+
+## 14. Build status
+
+**Milestone 1 (done):** survey flow (age gate, consent, 5 sections, returning code), hard-coded
+questionnaire v1, English and German, result page (archetype, spice level, radar chart,
+interest list), archetype gallery, client-side code saving, `POST /api/responses` with
+validation and quality flags, Postgres schema and migration, draft privacy page.
+
+**Milestone 2 (next):** reminder emails (double opt-in, Resend, daily cron), monthly
+aggregation with one-month lag and small-cell suppression, public `/results` page and CSV,
+data request form, share image (`next/og`), Turnstile behind a flag, rate limiting.

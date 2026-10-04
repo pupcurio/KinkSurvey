@@ -1,0 +1,417 @@
+{
+  "meta": {
+    "title": "Spice Census",
+    "description": "Eine anonyme 7-Minuten-Umfrage darüber, wie spicy wir sind und wie sich das über die Jahre verändert."
+  },
+  "nav": {
+    "home": "Spice Census",
+    "archetypes": "Archetypen",
+    "privacy": "Datenschutz",
+    "language": "Sprache"
+  },
+  "landing": {
+    "kicker": "Anonym · ab 18 · ca. 7 Minuten",
+    "title": "Wie spicy bist du?",
+    "intro": "Niemand weiß so richtig, wie kinky Menschen sind oder ob sich das verändert. Der Spice Census stellt allen, von komplett Vanilla bis sehr spicy, jedes Jahr dieselben kurzen Fragen. Deine Antworten werden Teil eines Langzeittrends, und am Ende bekommst du ein spaßiges Ergebnis.",
+    "pointsTitle": "Was dich erwartet",
+    "point1": "Rund 40 Multiple-Choice-Fragen. Kein Freitext.",
+    "point2": "Kein Name, keine E-Mail, keine IP-Adresse, keine Cookies. Deine Antworten lassen sich nicht auf dich zurückführen.",
+    "point3": "Paare willkommen: Macht die Umfrage getrennt und vergleicht eure Ergebnisse.",
+    "point4": "Am Ende: dein Archetyp, dein Spice-Profil und die Themen, die du schon erkundet hast.",
+    "contentNote": "Inhaltshinweis: Diese Umfrage fragt nicht explizit, aber direkt nach sexuellen Vorlieben und Aktivitäten. Du kannst jederzeit aufhören; gespeichert wird erst, wenn du auf Absenden drückst.",
+    "start": "Umfrage starten",
+    "seeArchetypes": "Alle Archetypen ansehen"
+  },
+  "gate": {
+    "title": "Das Wichtigste zuerst",
+    "question": "Bist du 18 Jahre oder älter?",
+    "yes": "Ja, ich bin 18 oder älter",
+    "no": "Nein",
+    "under18Title": "Danke fürs Vorbeischauen!",
+    "under18": "Diese Umfrage ist nur für Erwachsene. Es wurde nichts gespeichert. Komm wieder, wenn du 18 bist."
+  },
+  "consent": {
+    "title": "Deine Einwilligung",
+    "body": "Deine Antworten enthalten Angaben zu deinem Sexualleben. Das sind nach DSGVO (Art. 9) besonders geschützte Daten. Wir speichern deine Antworten anonym, ohne Angaben, die dich identifizieren, und nutzen sie ausschließlich zur Erforschung von Trends bei sexuellen Vorlieben. Zusammengefasste Statistiken werden veröffentlicht. Da die Antworten anonym sind, kann eine einzelne Antwort später nicht gefunden oder gelöscht werden.",
+    "checkbox": "Ich willige ein, dass meine anonymen Antworten zu diesem Zweck gespeichert und ausgewertet werden.",
+    "privacyLink": "Datenschutzerklärung lesen",
+    "continue": "Weiter"
+  },
+  "survey": {
+    "next": "Weiter",
+    "back": "Zurück",
+    "submit": "Absenden und Ergebnis ansehen",
+    "submitting": "Wird gesendet…",
+    "progress": "Schritt {current} von {total}",
+    "required": "Bitte beantworte alle Fragen auf dieser Seite, um weiterzumachen.",
+    "submitError": "Deine Antworten konnten gerade nicht gespeichert werden. Dein Ergebnis siehst du trotzdem unten.",
+    "preferNotToSay": "Keine Angabe",
+    "selectCountry": "Land auswählen"
+  },
+  "sections": {
+    "about": {
+      "title": "Über dich",
+      "intro": "Ein paar grobe Angaben, damit wir Trends in verschiedenen Gruppen sehen können. Jede Frage hat die Option \"Keine Angabe\"."
+    },
+    "core1": {
+      "title": "Deine Einstellungen (1/2)",
+      "intro": "Wie sehr stimmst du zu? Es gibt kein Richtig oder Falsch. Hör auf dein Bauchgefühl."
+    },
+    "core2": {
+      "title": "Deine Einstellungen (2/2)",
+      "intro": "Dieser Teil ist fast geschafft."
+    },
+    "activities": {
+      "title": "Was Menschen so machen",
+      "intro": "Jeweils: Schon ausprobiert, neugierig oder nichts für dich?"
+    },
+    "meta": {
+      "title": "Die letzten Fragen",
+      "intro": "Diese Fragen helfen uns zu verstehen, wer an der Umfrage teilnimmt."
+    },
+    "returning": {
+      "title": "Nächstes Jahr wieder dabei?",
+      "intro": "Freiwillig. Mit einem Wiederkehr-Code können wir sehen, wie sich die Antworten derselben (anonymen) Person über die Jahre verändern. Der Code ist zufällig und verrät nichts über dich."
+    }
+  },
+  "likert": {
+    "1": "Stimme gar nicht zu",
+    "2": "Stimme nicht zu",
+    "3": "Neutral",
+    "4": "Stimme zu",
+    "5": "Stimme voll zu"
+  },
+  "scale5": {
+    "1": "Gar nicht",
+    "5": "Sehr"
+  },
+  "activity": {
+    "tried": "Ausprobiert",
+    "curious": "Neugierig",
+    "not_for_me": "Nichts für mich"
+  },
+  "questions": {
+    "demo.age": {
+      "text": "Wie alt bist du?",
+      "options": {
+        "18_24": "18–24",
+        "25_34": "25–34",
+        "35_44": "35–44",
+        "45_54": "45–54",
+        "55_64": "55–64",
+        "65_plus": "65 oder älter",
+        "prefer_not_to_say": "Keine Angabe"
+      }
+    },
+    "demo.gender": {
+      "text": "Was ist deine Geschlechtsidentität?",
+      "options": {
+        "woman": "Frau",
+        "man": "Mann",
+        "non_binary": "Nicht-binär",
+        "other": "Genderfluid oder eine andere Identität",
+        "prefer_not_to_say": "Keine Angabe"
+      }
+    },
+    "demo.trans": {
+      "text": "Identifizierst du dich als trans?",
+      "options": {
+        "yes": "Ja",
+        "no": "Nein",
+        "prefer_not_to_say": "Keine Angabe"
+      }
+    },
+    "demo.orientation": {
+      "text": "Was ist deine sexuelle Orientierung?",
+      "options": {
+        "heterosexual": "Heterosexuell",
+        "gay_lesbian": "Schwul oder lesbisch",
+        "bi_pan": "Bisexuell oder pansexuell",
+        "asexual": "Im asexuellen Spektrum",
+        "queer_other": "Queer oder eine andere Orientierung",
+        "prefer_not_to_say": "Keine Angabe"
+      }
+    },
+    "demo.relationship": {
+      "text": "Wie sieht deine Beziehungssituation aus?",
+      "options": {
+        "single": "Single",
+        "monogamous": "In einer monogamen Beziehung",
+        "non_monogamous": "Nicht-monogam, offen oder polyamor",
+        "prefer_not_to_say": "Keine Angabe"
+      }
+    },
+    "demo.country": {
+      "text": "In welchem Land lebst du?"
+    },
+    "demo.community": {
+      "text": "Wie aktiv bist du in der Kink-Community?",
+      "options": {
+        "none": "Gar nicht",
+        "online": "Nur online",
+        "occasional": "Ich gehe ab und zu auf Events",
+        "active": "Ich bin aktives Mitglied",
+        "prefer_not_to_say": "Keine Angabe"
+      }
+    },
+    "core.curiosity.1": {
+      "text": "Ich bin neugierig darauf, Neues in meinem Sexleben auszuprobieren."
+    },
+    "core.curiosity.2": {
+      "text": "Ich spreche gern mit einer Partnerperson über Fantasien und Wünsche."
+    },
+    "core.curiosity.3": {
+      "text": "Sex, der immer nach derselben Routine abläuft, würde mich langweilen."
+    },
+    "core.lead.1": {
+      "text": "Ich übernehme in intimen Momenten gern die Führung."
+    },
+    "core.lead.2": {
+      "text": "Einer Partnerperson Anweisungen zu geben, macht mich an."
+    },
+    "core.lead.3": {
+      "text": "Mir gefällt die Vorstellung, dass eine Partnerperson mir die Kontrolle überlässt."
+    },
+    "core.follow.1": {
+      "text": "Ich genieße es, wenn eine Partnerperson die Führung übernimmt."
+    },
+    "core.follow.2": {
+      "text": "Im Bett gesagt zu bekommen, was ich tun soll, reizt mich."
+    },
+    "core.follow.3": {
+      "text": "Mir gefällt die Vorstellung, von einer Person, der ich vertraue, festgehalten oder gefesselt zu werden."
+    },
+    "core.sensation.1": {
+      "text": "Ich mag intensive körperliche Reize wie festes Zupacken, Beißen oder Kratzen."
+    },
+    "core.sensation.2": {
+      "text": "Ein bisschen Schmerz kann sich im richtigen Moment gut anfühlen."
+    },
+    "core.sensation.3": {
+      "text": "Ich mag Kontraste wie heiß und kalt oder sanft und grob."
+    },
+    "core.fantasy.1": {
+      "text": "Ich stelle mir beim Sex gern Szenarien oder Rollen vor."
+    },
+    "core.fantasy.2": {
+      "text": "Mich zu verkleiden oder eine Rolle zu spielen, klingt für mich nach Spaß."
+    },
+    "core.fantasy.3": {
+      "text": "Meine Fantasien sind ein wichtiger Teil meiner Sexualität."
+    },
+    "core.exhibition.1": {
+      "text": "Der Gedanke, dass mir jemand bei intimen Momenten zusieht, erregt mich."
+    },
+    "core.exhibition.2": {
+      "text": "Anderen (mit ihrem Einverständnis) bei intimen Momenten zuzusehen, erregt mich."
+    },
+    "core.exhibition.3": {
+      "text": "Das Risiko, erwischt zu werden, macht es für mich spannender."
+    },
+    "check.attention": {
+      "text": "Um zu zeigen, dass du aufmerksam liest, wähle hier bitte \"Stimme nicht zu\"."
+    },
+    "act.bondage": {
+      "text": "Leichtes Fesseln"
+    },
+    "act.impact": {
+      "text": "Spanking oder andere Schläge (Impact Play)"
+    },
+    "act.ds": {
+      "text": "Dominanz und Unterwerfung (D/s)"
+    },
+    "act.sensory": {
+      "text": "Augenbinde oder anderes Spiel mit den Sinnen"
+    },
+    "act.rough": {
+      "text": "An den Haaren ziehen, Beißen oder Kratzen"
+    },
+    "act.dirty_talk": {
+      "text": "Dirty Talk"
+    },
+    "act.roleplay": {
+      "text": "Rollenspiele"
+    },
+    "act.pet_play": {
+      "text": "Pet Play"
+    },
+    "act.toys": {
+      "text": "Sexspielzeug"
+    },
+    "act.semi_public": {
+      "text": "Sex an halböffentlichen Orten"
+    },
+    "act.watching": {
+      "text": "Anderen zusehen oder beobachtet werden"
+    },
+    "act.non_monogamy": {
+      "text": "Einvernehmliche Nicht-Monogamie"
+    },
+    "meta.before": {
+      "text": "Hast du schon einmal am Spice Census teilgenommen?",
+      "options": {
+        "no": "Nein, das ist mein erstes Mal",
+        "once": "Ja, einmal",
+        "several": "Ja, mehrmals"
+      }
+    },
+    "meta.partner": {
+      "text": "Machst du die Umfrage mit einer Partnerperson?",
+      "options": {
+        "alone": "Nein, nur ich",
+        "together": "Ja, die Person sitzt neben mir",
+        "separately": "Ja, wir machen sie jeweils getrennt"
+      }
+    },
+    "meta.source": {
+      "text": "Wo hast du vom Spice Census erfahren?",
+      "options": {
+        "social": "Social Media",
+        "friend": "Durch Freund*innen oder eine Partnerperson",
+        "community": "In einer Kink- oder queeren Community",
+        "forum": "In einem Forum oder auf Reddit",
+        "other": "Woanders"
+      }
+    },
+    "meta.self_kinky": {
+      "text": "Die letzte Frage vor deinem Ergebnis: Hältst du dich für kinky?"
+    }
+  },
+  "returning": {
+    "off": "Nein danke",
+    "new": "Code für mich erstellen",
+    "existing": "Ich habe schon einen Code",
+    "codeLabel": "Dein Wiederkehr-Code",
+    "codePlaceholder": "XXXX-XXXX-XXXX",
+    "invalid": "Das sieht nicht nach einem gültigen Code aus. Er hat 12 Buchstaben und Ziffern, z. B. ABCD-EFGH-2345.",
+    "newHint": "Deinen neuen Code bekommst du zusammen mit deinem Ergebnis.",
+    "remember": "Code auf diesem Gerät merken (nicht für geteilte Geräte)",
+    "showCode": "Code zeigen oder verbergen"
+  },
+  "result": {
+    "kicker": "Dein Spice-Census-Ergebnis",
+    "spiceLevel": "Spice-Level",
+    "profileTitle": "Dein Spice-Profil",
+    "interestsTitle": "Deine Interessen",
+    "interestsIntro": "Diese Umfrage hat folgende Themen berührt. So stehst du dazu:",
+    "allArchetypes": "Alle Archetypen ansehen",
+    "allArchetypesHint": "Neugierig auf die anderen? Du musst die Umfrage nicht nochmal machen. Alle stehen in der Galerie.",
+    "share": "Teilen",
+    "shareText": "Ich bin \"{archetype}\" im Spice Census. Wie spicy bist du?",
+    "copied": "Link kopiert!",
+    "thanks": "Danke fürs Mitmachen! Deine anonymen Antworten helfen uns zu sehen, wie sich Kinkiness über die Jahre verändert."
+  },
+  "dimensions": {
+    "curiosity": "Neugier",
+    "lead": "Führen",
+    "follow": "Folgen",
+    "sensation": "Sinnesreize",
+    "fantasy": "Fantasie",
+    "exhibition": "Exhibition"
+  },
+  "categories": {
+    "bdsm": "BDSM",
+    "sensation": "Spiel mit Sinnesreizen",
+    "verbal": "Dirty Talk",
+    "roleplay": "Rollenspiel & Pet Play",
+    "toys": "Spielzeug",
+    "exhibition": "Exhibitionismus & Voyeurismus",
+    "relationship": "Offene Beziehungen"
+  },
+  "interests": {
+    "explored": "Erkundet",
+    "curious": "Neugierig",
+    "not_for_me": "Nichts für dich"
+  },
+  "code": {
+    "title": "Dein Wiederkehr-Code",
+    "intro": "Bewahre diesen Code auf, um nächstes Jahr wieder teilzunehmen. Wir können ihn dir weder schicken noch wiederherstellen: Wir verknüpfen ihn nie mit etwas über dich, und genau darum geht es.",
+    "existingIntro": "Deine Antworten wurden mit deinem Wiederkehr-Code gespeichert. Nutze beim nächsten Mal denselben Code.",
+    "copy": "Kopieren",
+    "copied": "Kopiert!",
+    "email": "An mich selbst mailen",
+    "emailSubject": "Mein Spice-Census-Code",
+    "emailBody": "Mein Spice-Census-Wiederkehr-Code: {code}\n\nZur Umfrage: {url}",
+    "passwordManager": "Im Passwortmanager speichern",
+    "passwordManagerDone": "Falls dein Browser gefragt hat, ist der Code jetzt gespeichert.",
+    "download": "Als Datei herunterladen",
+    "fileText": "Spice-Census-Wiederkehr-Code: {code}\n\nZur Umfrage: {url}\n",
+    "emailHint": "\"An mich selbst mailen\" öffnet dein eigenes E-Mail-Programm mit einem Entwurf. Nichts davon läuft über unseren Server."
+  },
+  "archetypes": {
+    "vanilla": {
+      "name": "Vanille-Fan",
+      "description": "Vanille ist nicht ohne Grund die beliebteste Sorte. Du weißt, was dir gefällt, und genießt es ohne Schnickschnack."
+    },
+    "firecracker": {
+      "name": "Feuerwerk",
+      "description": "Neugierig, mutig und für fast alles zu haben. Dein Spice-Level sprengt die Skala, und langweilig wird es mit dir nie."
+    },
+    "switch": {
+      "name": "Switch",
+      "description": "Führen oder folgen? Warum sich entscheiden. Du genießt beide Seiten des Machtspiels und spürst, was der Moment braucht."
+    },
+    "explorer": {
+      "name": "Entdeckergeist",
+      "description": "Am meisten reizt dich das Neue und Unbekannte. Du redest gern über Wünsche und probierst gern etwas anderes aus."
+    },
+    "lead": {
+      "name": "Sanfte Führung",
+      "description": "Du gibst gern das Tempo vor und kümmerst dich dabei um dein Gegenüber. Selbstvertrauen ist deine Würze."
+    },
+    "follower": {
+      "name": "Vertrauensvolle Hingabe",
+      "description": "Loslassen ist dein Ding. Wenn du einer Person, der du vertraust, die Führung überlässt, kannst du den Moment voll genießen."
+    },
+    "sensation": {
+      "name": "Sinnesrausch",
+      "description": "Festes Zupacken, Kontraste und ein kleiner Biss: Du magst es, Dinge intensiv zu spüren."
+    },
+    "storyteller": {
+      "name": "Kopfkino",
+      "description": "Deine Fantasie ist dein liebstes Spielzeug. Szenarien, Rollen und Kostüme machen es für dich aufregend."
+    },
+    "spotlight": {
+      "name": "Rampenlicht",
+      "description": "Zusehen, beobachtet werden, der kleine Kick, erwischt zu werden: Für dich bringt ein (echtes oder vorgestelltes) Publikum die Würze."
+    }
+  },
+  "gallery": {
+    "title": "Alle Archetypen",
+    "intro": "Am Ende der Umfrage bekommt jede Person einen davon, abhängig vom Spice-Level und der stärksten Dimension. Du musst die Umfrage nicht nochmal machen, um die anderen zu sehen: Hier sind sie alle."
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "draftNotice": "Entwurf. Dieser Text braucht vor dem Start noch eine rechtliche Prüfung und die Kontaktdaten der verantwortlichen Stelle.",
+    "sections": {
+      "controller": {
+        "title": "Verantwortliche Stelle",
+        "body": "[Name und Anschrift der verantwortlichen Stelle werden vor dem Start ergänzt.]"
+      },
+      "what": {
+        "title": "Was wir speichern",
+        "body": "Deine Antworten auf die Umfragefragen, die verwendete Sprache, die Version der Umfrage und den Monat (nicht Tag oder Uhrzeit) der Teilnahme. Wenn du einen Wiederkehr-Code nutzt, speichern wir einen Einweg-Hash dieses zufälligen Codes. Wir speichern weder deine IP-Adresse noch Browserdaten, Cookies oder Freitext."
+      },
+      "why": {
+        "title": "Zweck und Rechtsgrundlage",
+        "body": "Zur Erforschung von Trends bei sexuellen Vorlieben über mehrere Jahre und zur Veröffentlichung zusammengefasster Statistiken. Da die Antworten dein Sexualleben betreffen, verarbeiten wir sie nur mit deiner ausdrücklichen Einwilligung (Art. 9 Abs. 2 lit. a DSGVO)."
+      },
+      "anonymous": {
+        "title": "Anonymität und Löschung",
+        "body": "Deine Antworten lassen sich nicht mit dir verknüpfen. Deshalb können wir eine einzelne Antwort auf Anfrage weder finden noch anzeigen oder löschen. Wenn du einen Wiederkehr-Code genutzt hast, kennst nur du ihn; wir können ihn nicht wiederherstellen."
+      },
+      "processors": {
+        "title": "Dienstleister",
+        "body": "Die Website wird von Vercel (EU-Region Frankfurt) gehostet, die Datenbank von Neon (EU-Region). Beide verarbeiten Daten nur in unserem Auftrag."
+      },
+      "sharing": {
+        "title": "Veröffentlichung",
+        "body": "Monatlich zusammengefasste Statistiken werden mit einem Monat Verzögerung veröffentlicht. Gruppen mit weniger als 10 Antworten werden nie angezeigt. Forschende können anonymisierte Rohdaten beantragen; Wiederkehr-Codes sind darin nie enthalten."
+      },
+      "rights": {
+        "title": "Deine Rechte",
+        "body": "Du kannst deine Einwilligung jederzeit widerrufen, indem du die Umfrage nicht absendest. Du hast das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren."
+      }
+    }
+  }
+}

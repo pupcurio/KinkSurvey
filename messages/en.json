@@ -1,0 +1,417 @@
+{
+  "meta": {
+    "title": "Spice Census",
+    "description": "An anonymous 7-minute survey about how spicy we are, and how that changes over the years."
+  },
+  "nav": {
+    "home": "Spice Census",
+    "archetypes": "Archetypes",
+    "privacy": "Privacy",
+    "language": "Language"
+  },
+  "landing": {
+    "kicker": "Anonymous · 18+ · about 7 minutes",
+    "title": "How spicy are you?",
+    "intro": "Nobody really knows how kinky people are, or whether that is changing. The Spice Census asks everyone, from totally vanilla to very spicy, the same short set of questions every year. Your answers become part of a long-term trend, and you get a fun result at the end.",
+    "pointsTitle": "What to expect",
+    "point1": "About 40 multiple-choice questions. No free text.",
+    "point2": "No name, no email, no IP address, no cookies. Answers cannot be traced back to you.",
+    "point3": "Couples welcome: take it separately and compare your results.",
+    "point4": "At the end: your archetype, your spice profile and the topics you have explored.",
+    "contentNote": "Content note: this survey asks about sexual preferences and activities in a non-graphic way. You can stop at any time; nothing is saved until you press submit.",
+    "start": "Start the survey",
+    "seeArchetypes": "Peek at all archetypes"
+  },
+  "gate": {
+    "title": "First things first",
+    "question": "Are you 18 years or older?",
+    "yes": "Yes, I am 18 or older",
+    "no": "No",
+    "under18Title": "Thanks for stopping by!",
+    "under18": "This survey is only for adults. Nothing has been saved. Come back when you are 18."
+  },
+  "consent": {
+    "title": "Your consent",
+    "body": "Your answers include information about your sex life, which is specially protected data under the GDPR (Art. 9). We store your answers anonymously, without any information that identifies you, and use them only to research trends in sexual preferences. Aggregated statistics are published. Because the answers are anonymous, a single response cannot be found or deleted later.",
+    "checkbox": "I agree that my anonymous answers are stored and analysed for this purpose.",
+    "privacyLink": "Read the privacy policy",
+    "continue": "Continue"
+  },
+  "survey": {
+    "next": "Next",
+    "back": "Back",
+    "submit": "Submit and see my result",
+    "submitting": "Submitting…",
+    "progress": "Step {current} of {total}",
+    "required": "Please answer every question on this page to continue.",
+    "submitError": "Your answers could not be saved right now. Your result is shown below anyway.",
+    "preferNotToSay": "Prefer not to say",
+    "selectCountry": "Select a country"
+  },
+  "sections": {
+    "about": {
+      "title": "About you",
+      "intro": "A few rough facts, so we can see trends across groups. Every question has a \"Prefer not to say\" option."
+    },
+    "core1": {
+      "title": "Your attitudes (1/2)",
+      "intro": "How much do you agree? There are no right or wrong answers. Go with your gut."
+    },
+    "core2": {
+      "title": "Your attitudes (2/2)",
+      "intro": "Almost there with this part."
+    },
+    "activities": {
+      "title": "Things people do",
+      "intro": "For each one: have you tried it, are you curious, or is it not for you?"
+    },
+    "meta": {
+      "title": "Last few questions",
+      "intro": "These help us understand who takes the survey."
+    },
+    "returning": {
+      "title": "Coming back next year?",
+      "intro": "Optional. With a returning code we can see how answers change for the same (anonymous) person over the years. The code is random, so it says nothing about you."
+    }
+  },
+  "likert": {
+    "1": "Strongly disagree",
+    "2": "Disagree",
+    "3": "Neutral",
+    "4": "Agree",
+    "5": "Strongly agree"
+  },
+  "scale5": {
+    "1": "Not at all",
+    "5": "Very"
+  },
+  "activity": {
+    "tried": "Tried it",
+    "curious": "Curious",
+    "not_for_me": "Not for me"
+  },
+  "questions": {
+    "demo.age": {
+      "text": "How old are you?",
+      "options": {
+        "18_24": "18–24",
+        "25_34": "25–34",
+        "35_44": "35–44",
+        "45_54": "45–54",
+        "55_64": "55–64",
+        "65_plus": "65 or older",
+        "prefer_not_to_say": "Prefer not to say"
+      }
+    },
+    "demo.gender": {
+      "text": "What is your gender identity?",
+      "options": {
+        "woman": "Woman",
+        "man": "Man",
+        "non_binary": "Non-binary",
+        "other": "Genderfluid or another identity",
+        "prefer_not_to_say": "Prefer not to say"
+      }
+    },
+    "demo.trans": {
+      "text": "Do you identify as trans?",
+      "options": {
+        "yes": "Yes",
+        "no": "No",
+        "prefer_not_to_say": "Prefer not to say"
+      }
+    },
+    "demo.orientation": {
+      "text": "What is your sexual orientation?",
+      "options": {
+        "heterosexual": "Heterosexual",
+        "gay_lesbian": "Gay or lesbian",
+        "bi_pan": "Bisexual or pansexual",
+        "asexual": "On the asexual spectrum",
+        "queer_other": "Queer or another orientation",
+        "prefer_not_to_say": "Prefer not to say"
+      }
+    },
+    "demo.relationship": {
+      "text": "What is your relationship situation?",
+      "options": {
+        "single": "Single",
+        "monogamous": "In a monogamous relationship",
+        "non_monogamous": "Non-monogamous, open or polyamorous",
+        "prefer_not_to_say": "Prefer not to say"
+      }
+    },
+    "demo.country": {
+      "text": "Which country do you live in?"
+    },
+    "demo.community": {
+      "text": "How involved are you in the kink community?",
+      "options": {
+        "none": "Not at all",
+        "online": "Online only",
+        "occasional": "I go to events now and then",
+        "active": "I am an active member",
+        "prefer_not_to_say": "Prefer not to say"
+      }
+    },
+    "core.curiosity.1": {
+      "text": "I am curious to try new things in my sex life."
+    },
+    "core.curiosity.2": {
+      "text": "I enjoy talking about fantasies and desires with a partner."
+    },
+    "core.curiosity.3": {
+      "text": "Sex that always follows the same routine would bore me."
+    },
+    "core.lead.1": {
+      "text": "I enjoy taking charge during intimate moments."
+    },
+    "core.lead.2": {
+      "text": "Giving a partner instructions turns me on."
+    },
+    "core.lead.3": {
+      "text": "I like the idea of a partner giving up control to me."
+    },
+    "core.follow.1": {
+      "text": "I enjoy letting a partner take charge."
+    },
+    "core.follow.2": {
+      "text": "Being told what to do in bed appeals to me."
+    },
+    "core.follow.3": {
+      "text": "I like the idea of being held down or restrained by a partner I trust."
+    },
+    "core.sensation.1": {
+      "text": "I like intense physical sensations, such as firm grips, biting or scratching."
+    },
+    "core.sensation.2": {
+      "text": "A little pain can feel good in the right moment."
+    },
+    "core.sensation.3": {
+      "text": "I enjoy contrasts such as hot and cold, or soft and rough."
+    },
+    "core.fantasy.1": {
+      "text": "I enjoy imagining scenarios or characters during sex."
+    },
+    "core.fantasy.2": {
+      "text": "Dressing up or playing a role sounds fun to me."
+    },
+    "core.fantasy.3": {
+      "text": "My fantasies are an important part of my sexuality."
+    },
+    "core.exhibition.1": {
+      "text": "The thought of someone watching me during intimacy excites me."
+    },
+    "core.exhibition.2": {
+      "text": "Watching others be intimate (with their consent) excites me."
+    },
+    "core.exhibition.3": {
+      "text": "The risk of getting caught adds to the thrill."
+    },
+    "check.attention": {
+      "text": "To show that you are reading carefully, please choose \"Disagree\" here."
+    },
+    "act.bondage": {
+      "text": "Light bondage or restraints"
+    },
+    "act.impact": {
+      "text": "Spanking or other impact play"
+    },
+    "act.ds": {
+      "text": "Dominance and submission dynamics"
+    },
+    "act.sensory": {
+      "text": "Blindfolds or other sensory play"
+    },
+    "act.rough": {
+      "text": "Hair pulling, biting or scratching"
+    },
+    "act.dirty_talk": {
+      "text": "Dirty talk"
+    },
+    "act.roleplay": {
+      "text": "Roleplay scenarios"
+    },
+    "act.pet_play": {
+      "text": "Pet play"
+    },
+    "act.toys": {
+      "text": "Sex toys"
+    },
+    "act.semi_public": {
+      "text": "Sex in semi-public places"
+    },
+    "act.watching": {
+      "text": "Watching others or being watched"
+    },
+    "act.non_monogamy": {
+      "text": "Consensual non-monogamy"
+    },
+    "meta.before": {
+      "text": "Have you taken the Spice Census before?",
+      "options": {
+        "no": "No, this is my first time",
+        "once": "Yes, once",
+        "several": "Yes, several times"
+      }
+    },
+    "meta.partner": {
+      "text": "Are you taking this with a partner?",
+      "options": {
+        "alone": "No, just me",
+        "together": "Yes, my partner is right here",
+        "separately": "Yes, we each take it separately"
+      }
+    },
+    "meta.source": {
+      "text": "Where did you hear about the Spice Census?",
+      "options": {
+        "social": "Social media",
+        "friend": "A friend or partner",
+        "community": "A kink or queer community",
+        "forum": "A forum or Reddit",
+        "other": "Somewhere else"
+      }
+    },
+    "meta.self_kinky": {
+      "text": "Last one before your result: do you think you are kinky?"
+    }
+  },
+  "returning": {
+    "off": "No thanks",
+    "new": "Create a code for me",
+    "existing": "I already have a code",
+    "codeLabel": "Your returning code",
+    "codePlaceholder": "XXXX-XXXX-XXXX",
+    "invalid": "That does not look like a valid code. It has 12 letters and digits, like ABCD-EFGH-2345.",
+    "newHint": "You will get your new code together with your result.",
+    "remember": "Remember my code on this device (not for shared devices)",
+    "showCode": "Show or hide code"
+  },
+  "result": {
+    "kicker": "Your Spice Census result",
+    "spiceLevel": "Spice level",
+    "profileTitle": "Your spice profile",
+    "interestsTitle": "Your interests",
+    "interestsIntro": "This survey touched on these topics. Here is where you stand:",
+    "allArchetypes": "See all archetypes",
+    "allArchetypesHint": "Curious about the others? No need to retake the survey. They are all in the gallery.",
+    "share": "Share",
+    "shareText": "I am \"{archetype}\" in the Spice Census. How spicy are you?",
+    "copied": "Link copied!",
+    "thanks": "Thank you for taking part! Your anonymous answers help us see how kinkiness changes over the years."
+  },
+  "dimensions": {
+    "curiosity": "Curiosity",
+    "lead": "Lead",
+    "follow": "Follow",
+    "sensation": "Sensation",
+    "fantasy": "Fantasy",
+    "exhibition": "Exhibition"
+  },
+  "categories": {
+    "bdsm": "BDSM",
+    "sensation": "Sensation play",
+    "verbal": "Dirty talk",
+    "roleplay": "Roleplay & pet play",
+    "toys": "Toys",
+    "exhibition": "Exhibition & voyeurism",
+    "relationship": "Open relationships"
+  },
+  "interests": {
+    "explored": "Explored",
+    "curious": "Curious",
+    "not_for_me": "Not for you"
+  },
+  "code": {
+    "title": "Your returning code",
+    "intro": "Keep this code to take part again next year. We cannot send it to you or recover it: we never connect it to anything about you, and that is the point.",
+    "existingIntro": "Your answers were saved with your returning code. Keep using the same code next time.",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "email": "Email it to myself",
+    "emailSubject": "My Spice Census code",
+    "emailBody": "My Spice Census returning code: {code}\n\nTake the survey again at: {url}",
+    "passwordManager": "Save in password manager",
+    "passwordManagerDone": "If your browser asked, the code is now saved.",
+    "download": "Download as file",
+    "fileText": "Spice Census returning code: {code}\n\nTake the survey again at: {url}\n",
+    "emailHint": "\"Email it to myself\" opens your own email app with a draft. It does not go through our server."
+  },
+  "archetypes": {
+    "vanilla": {
+      "name": "The Vanilla Connoisseur",
+      "description": "Vanilla is the most popular flavour for a reason. You know what you like, and you enjoy it without bells and whistles."
+    },
+    "firecracker": {
+      "name": "The Firecracker",
+      "description": "Curious, bold and up for almost anything. Your spice level is off the charts and your partners never get bored."
+    },
+    "switch": {
+      "name": "The Switch",
+      "description": "Leading or following? Why choose. You enjoy both sides of the power dynamic and read the moment."
+    },
+    "explorer": {
+      "name": "The Curious Explorer",
+      "description": "Your biggest turn-on is the new and unknown. You love talking about desires and trying something different."
+    },
+    "lead": {
+      "name": "The Gentle Lead",
+      "description": "You like to set the pace and take care of your partner while you do it. Confidence is your spice."
+    },
+    "follower": {
+      "name": "The Trusting Follower",
+      "description": "Letting go is your thing. Giving a partner you trust the lead lets you fully enjoy the moment."
+    },
+    "sensation": {
+      "name": "The Sensation Seeker",
+      "description": "Firm grips, contrasts and a little bite: you enjoy feeling things intensely."
+    },
+    "storyteller": {
+      "name": "The Storyteller",
+      "description": "Your imagination is your favourite toy. Scenarios, characters and costumes make things exciting for you."
+    },
+    "spotlight": {
+      "name": "The Spotlight Lover",
+      "description": "Watching, being watched, a little thrill of getting caught: for you, an audience (real or imagined) adds the spice."
+    }
+  },
+  "gallery": {
+    "title": "All archetypes",
+    "intro": "Everyone gets one of these at the end of the survey, based on their spice level and strongest dimension. No need to retake the survey to see the others: here they all are."
+  },
+  "privacy": {
+    "title": "Privacy policy",
+    "draftNotice": "Draft. This text still needs a legal review and the controller's contact details before launch.",
+    "sections": {
+      "controller": {
+        "title": "Who is responsible",
+        "body": "[Controller name and address to be added before launch.]"
+      },
+      "what": {
+        "title": "What we store",
+        "body": "Your answers to the survey questions, the language you used, the survey version and the month (not the day or time) you submitted. If you opt in to a returning code, we store a one-way hash of that random code. We do not store your IP address, browser details, cookies or any free text."
+      },
+      "why": {
+        "title": "Why and on what legal basis",
+        "body": "To research trends in sexual preferences over several years and publish aggregated statistics. Because the answers concern your sex life, we process them only with your explicit consent (GDPR Art. 9(2)(a))."
+      },
+      "anonymous": {
+        "title": "Anonymity and deletion",
+        "body": "Your answers cannot be linked to you, so we cannot find, show or delete a single response on request. If you used a returning code, only you know it; we cannot recover it."
+      },
+      "processors": {
+        "title": "Service providers",
+        "body": "The website is hosted by Vercel (EU region Frankfurt) and the database by Neon (EU region). They process data only on our behalf."
+      },
+      "sharing": {
+        "title": "Publishing",
+        "body": "Monthly aggregated statistics are published with a one-month delay. Groups with fewer than 10 responses are never shown. Researchers can apply for anonymised raw data; returning codes are never included."
+      },
+      "rights": {
+        "title": "Your rights",
+        "body": "You can withdraw your consent at any time by not submitting the survey. You have the right to lodge a complaint with a data protection supervisory authority."
+      }
+    }
+  }
+}
